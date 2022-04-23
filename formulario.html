@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> formulario</title>
+
+    <style>
+   .container{
+       /*eu já tinha conseguido colocar esse estilo em tudo usando apenas a classe container nos dois elementos, parece que tem uma hierarquia onde o estilo da primeira class vel até colocar outro estulo em uma class mais recente*/
+       background-color: antiquewhite;
+       padding: 20px;
+       border-radius: 5px;
+       margin-top: 20px;
+   }
+
+   .cadastro{
+    padding: 20px;
+       border-radius: 5px; /*arredondar as bordas*/
+       margin-top: 20px;
+   }
+      
+   .container__cadastro{
+       background-color: cadetblue;
+   }
+   .cadastro__input{
+       background-color: coral;
+       border-radius: 5px;
+   }
+   .cadastro__button{
+       background-color: blue;
+       border-radius: 5px;
+   }
+   .dados{
+       padding: 20px;
+       border-radius: 5px; /*arredondar as bordas*/
+       margin-top: 20px;
+   }
+   .dados__input{
+    background-color: cadetblue;
+       border-radius: 5px;
+   }
+   .dados__button{
+    background-color: pink;
+       border-radius: 5px;
+   }
+   .dados__button--hover:hover/*quando passar o mouse*/{
+       background-color: blue;
+   }
+   .cadastro__button--hover:hover/*quando passar o mouse*/{
+       background-color: pink;
+   }
+    </style>
+</head>
+<body>
+    <div class=" container container__cadastro cadastro">
+        <!--Aqui eu vou tendo várias classes, separadas só por espaço-->
+        <p>Formulário de Cadastro</p>
+            <form action=" ">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="cadastro__input"/> <!--Ele chamou colocou o estilo e dpois chamou a class aqui-->
+                
+                <label for="sobrenome" name="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome"class="cadastro__input"/>
+                
+                <label for="email">E-mal</label>
+                <input type="email" name="email" class="cadastro__input"/>
+               
+                <label for="telefone">Teleforne</label>
+               <input type="tel" name="telefone" class="cadastro__input"/>
+               
+               <label for="senha">Senha</label>
+                <input type="password" name="senha"class="cadastro__input"/>
+                
+                <label for="confirmar-senha">Confirmar senha</label>
+                <input type="password" name="confirmar-senha" class="cadastro__input"/>
+                
+                <input type="button" value="enviar" class="cadastro__button cadastro__button--hover"/>
+            </form>
+    </div>
+    <!--Atalho ctrl H para editar algo que se repete muito-->
+    <div class="container container__dados dados">
+        <p>Dados pessoais</p>
+        <form action="">
+            <label for="endereco">Enderaço</label>
+            <input type="text" name="endereco" class="dados__input"/>
+            
+            <label for="numero">Numero</label>
+            <input type="text" name="numero" class="dados__input" />
+            
+            <label for="complemento">complemento</label>
+            <input type="text" name="complemento" class="dados__input"/>
+            
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" class="dados__input"/>
+            
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" class="dados__input"/>
+
+            <input type="button" value="enviar" class="dados__button dados__button--hover"/>
+        </form>
+    </div>
+</body>
+</html>

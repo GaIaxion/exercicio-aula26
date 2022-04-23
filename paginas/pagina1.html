@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrão BEN</title>
+    <style>
+        .container{
+            background-color: burlywood;
+        }
+        .container__none{
+            background-color: cadetblue;
+        }
+        .container__none--cor{
+            background-color: cornflowerblue;
+        }
+        .container__submit--hover:hover{
+            background-color: chartreuse;
+        }
+        .container__submit--click:active{
+            background-color: darkgreen;
+        }
+        .container__submit--color{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+<!-- BLOCO -->
+   <div class="container">
+       <p> Formulário</p>
+       <form action=" ">
+        <!--Elemanto-->   
+        <input type="text" class="container__none container__none--cor "/> <!--O __ serve para indicar um elemento-->
+           <input type="submit" value="enviar"
+           class="container__submit--hover container__submit--click container__submit--color"/> <!--Nunca apagar um elemento lá no estilo, senpre ir adicinanardo, aqui tmb sempre add o novo elemento-->
+
+       </form>
+   </div> 
+</body>
+</html>
